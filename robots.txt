@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://supp360.com/sitemap.xml
