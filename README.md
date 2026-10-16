@@ -24,27 +24,17 @@ Supporting files: `assets/css/styles.css`, `assets/js/main.js` (nav, mega-menu, 
 Header and footer markup is repeated in each HTML file (plain static site, no build step) — if you
 change a nav link or a phone number, update it in **all** pages.
 
-## ⚠️ Fill these in before going live
+## Contact details
 
-Search and replace across all files:
+Contact details are filled in across all pages. If they change, search and replace in **all** pages, `assets/js/form.js` and the `index.html` JSON-LD:
 
-| Placeholder | Where | Replace with |
-|---|---|---|
-| `+91 00000 00000` | topbar + footer of every page, `contact.html`, `index.html` JSON-LD | real phone number |
-| `tel:+910000000000` | same places | `tel:+91XXXXXXXXXX` |
-| `910000000000` | `assets/js/form.js` (`WHATSAPP_NUMBER`), `contact.html` wa.me link | WhatsApp number, digits only, no `+` |
-| `info@supp360.com` | topbar, footer, `contact.html`, `form.js` (`FALLBACK_EMAIL`), JSON-LD | real enquiry inbox |
-| `Corporate Office Address Line 1 / Area, City, State — PIN Code` | footer of every page, `contact.html`, JSON-LD (`postalCode: 000000`) | real office address |
-| `Mon – Sat: 9:30 AM – 6:30 PM` | footer, `contact.html` | real business hours |
-
-Quick way to do the phone/email swap:
-
-```bash
-cd mukul2
-grep -rl '00000 00000' . --include='*.html'          # see which files are affected
-sed -i '' 's/+91 00000 00000/+91 98765 43210/g' *.html
-sed -i '' 's/910000000000/919876543210/g' *.html assets/js/form.js
-```
+| Value | Where |
+|---|---|
+| `+91 88829 51386` / `tel:+918882951386` | topbar + footer of every page, `contact.html`, `index.html` JSON-LD |
+| `918882951386` | `assets/js/form.js` (`WHATSAPP_NUMBER`), `contact.html` wa.me link |
+| `admin@supp360.com` | topbar, footer, `contact.html`, `form.js` (`FALLBACK_EMAIL`), JSON-LD |
+| `302, Vasant Vihar Apt, opp. Ashirwad Hospital, Ambernath, Kalyan, Thane – 421501, Maharashtra` | footer of every page, `contact.html`, JSON-LD |
+| `Mon – Sat: 9:30 AM – 6:30 PM` | footer, `contact.html` |
 
 ## Enquiry form
 

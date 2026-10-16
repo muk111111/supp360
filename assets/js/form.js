@@ -10,8 +10,8 @@
 (function () {
   "use strict";
 
-  var WHATSAPP_NUMBER = "910000000000";      // TODO: replace with SUPP360 WhatsApp number
-  var FALLBACK_EMAIL = "info@supp360.com";   // TODO: confirm enquiry inbox
+  var WHATSAPP_NUMBER = "918882951386";
+  var FALLBACK_EMAIL = "admin@supp360.com";
 
   var form = document.getElementById("enquiry-form");
   if (!form) return;
